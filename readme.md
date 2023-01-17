@@ -3,6 +3,23 @@
 ## Introduction
 The purpose of this tool is to take a body and two wings, and attach them to each other, s.t. the wings are movable using an attache lever.
 
+## Requirements
+The following imports are used - make sure your python used in blender has them installed:
+```python
+import bpy
+import bmesh
+from mathutils import Vector
+
+from simplefractions import simplest_in_interval
+from typing import Union
+import math
+from math import sqrt
+from typing import Union
+from scipy.spatial import distance
+```
+
+In addition, the blender add-on "Mesh: Extra Objects" is required.
+
 ## Usage instructions
 One must take a blender file with the body and wings placed in their endgoal positions for the final model, and run the script inside it with the matching input.
 
